@@ -11,9 +11,9 @@ namespace Application.Features.BankAccountFeatures.Commands
 {
     public class UpdateBankAccountCommand : IRequest<int>
     {
-        public string DepositorId { get; set; }
         public int Id { get; set; }
         public string Name { get; set; }
+        public string AccountNumber { get; set; }
         public string Description { get; set; }
         public decimal InitialAmount { get; set; }
         public class UpdateBankAccountCommandHandler : IRequestHandler<UpdateBankAccountCommand, int>
@@ -33,7 +33,7 @@ namespace Application.Features.BankAccountFeatures.Commands
                 }
                 else
                 {
-                    bankaccount.DepositorId = command.DepositorId;
+                    bankaccount.AccountNumber = command.AccountNumber;
                     bankaccount.Name = command.Name;
                     bankaccount.InitialAmount = command.InitialAmount;
                     bankaccount.Description = command.Description;
