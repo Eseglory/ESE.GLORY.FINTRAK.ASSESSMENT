@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Controllers.v1.BankAccountController.Create(Application.Features.BankAccountFeatures.Commands.CreateBankAccountCommand)">
+            <summary>
+            Creates a New BankAccount.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.BankAccountController.GetAll">
+            <summary>
+            Gets all BankAccounts.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.BankAccountController.GetById(System.Int32)">
+            <summary>
+            Gets BankAccount Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.BankAccountController.Delete(System.Int32)">
+            <summary>
+            Deletes BankAccount Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.BankAccountController.Update(System.Int32,Application.Features.BankAccountFeatures.Commands.UpdateBankAccountCommand)">
+            <summary>
+            Updates the BankAccount Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
